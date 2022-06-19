@@ -74,7 +74,7 @@ const App: React.FC = () => {
             <FormLabel className={"col-2 text-start"}>커스텀 확장자</FormLabel>
             <Col className={"d-flex flex-row"}>
               <Form className={"d-flex"}>
-                <Form.Control type={"text"} size={"sm"}
+                <Form.Control type={"text"} size={"sm"} maxLength={20}
                               onChange={(e: ChangeEvent<HTMLInputElement>) => setFileExtension(e.target.value)}/>
                 <Button type={"reset"} variant="secondary" size={"sm"} className={"ms-1"} style={{width: '70px'}}
                         onClick={() => onAddCustomClick(fileExtension)}>+추가</Button>
